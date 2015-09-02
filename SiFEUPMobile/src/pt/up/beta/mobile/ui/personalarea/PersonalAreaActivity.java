@@ -19,7 +19,8 @@ public class PersonalAreaActivity extends BaseSinglePaneActivity {
 
 	@Override
 	protected Fragment onCreatePane() {
-		final String type = AccountUtils.getActiveUserType(this);
+		//final String type = AccountUtils.getActiveUserType(this);
+		final String type = SifeupAPI.STUDENT_TYPE;
 		if (type.equals(SifeupAPI.STUDENT_TYPE))
 			return new StudentAreaFragment();
 		else

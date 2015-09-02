@@ -78,11 +78,13 @@ public class LauncherActivity extends SherlockFragmentActivity implements
 					builder = new StrictMode.VmPolicy.Builder()
 							.detectLeakedSqlLiteObjects()
 							.detectLeakedClosableObjects().penaltyLog()
-							.penaltyDeath();
+							//.penaltyDeath();
+							.penaltyLog();
 				else
 					builder = new StrictMode.VmPolicy.Builder()
 							.detectLeakedSqlLiteObjects().penaltyLog()
-							.penaltyDeath();
+							//.penaltyDeath();
+							.penaltyLog();
 				StrictMode.setVmPolicy(builder.build());
 			}
 		}

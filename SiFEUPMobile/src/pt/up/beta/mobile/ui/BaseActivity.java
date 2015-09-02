@@ -50,13 +50,13 @@ public abstract class BaseActivity extends SherlockFragmentActivity {
 		actionbar = getSupportActionBar();
 		if (!UIUtils.isTablet(getApplicationContext())) {
 			// customize the SlidingMenu
-			slidingMenu = new SlidingMenu(this);
+			/*slidingMenu = new SlidingMenu(getApplicationContext());
 			slidingMenu.setShadowWidthRes(R.dimen.shadow_width);
 			slidingMenu.setShadowDrawable(R.drawable.shadow);
 			slidingMenu.setBehindOffsetRes(R.dimen.actionbar_home_width);
 			slidingMenu.setTouchModeAbove(SlidingMenu.TOUCHMODE_MARGIN);
-			slidingMenu.attachToActivity(this, SlidingMenu.SLIDING_CONTENT);
-			slidingMenu.setMenu(R.layout.menu_frame);
+			slidingMenu.attachToActivity(getApplicationContext(), SlidingMenu.SLIDING_CONTENT);
+			slidingMenu.setMenu(R.layout.menu_frame);*/
 		}
 	}
 
